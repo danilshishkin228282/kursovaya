@@ -1,0 +1,139 @@
+<div class="modal fade" id="loginModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Вход в систему</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="login-form">
+                    <div class="mb-3">
+                        <label class="form-label">Имя пользователя</label>
+                        <input type="text" class="form-control" name="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Пароль</label>
+                        <input type="password" class="form-control" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Войти</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="registerModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Регистрация</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="register-form">
+                    <div class="mb-3">
+                        <label class="form-label">Имя пользователя</label>
+                        <input type="text" class="form-control" name="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" name="email">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Пароль</label>
+                        <input type="password" class="form-control" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Зарегистрироваться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="addBookModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Добавить книгу</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="add-book-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Название книги *</label>
+                                <input type="text" class="form-control" name="title" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Автор *</label>
+                                <input type="text" class="form-control" name="author" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Жанр</label>
+                                <select class="form-select" name="genre">
+                                    <option value="fiction">Художественная литература</option>
+                                    <option value="non_fiction">Нехудожественная литература</option>
+                                    <option value="fantasy">Фэнтези</option>
+                                    <option value="sci_fi">Научная фантастика</option>
+                                    <option value="mystery">Детектив</option>
+                                    <option value="romance">Роман</option>
+                                    <option value="biography">Биография</option>
+                                    <option value="history">История</option>
+                                    <option value="science">Наука</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Год издания</label>
+                                <input type="number" class="form-control" name="publication_year">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Описание</label>
+                        <textarea class="form-control" name="description" rows="3"></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Статус</label>
+                                <select class="form-select" name="status">
+                                    <option value="want_to_read">Хочу прочитать</option>
+                                    <option value="reading">Читаю</option>
+                                    <option value="finished">Прочитано</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Оценка (1-5)</label>
+                                <select class="form-select" name="rating">
+                                    <option value="">Без оценки</option>
+                                    <option value="1">1 ★</option>
+                                    <option value="2">2 ★★</option>
+                                    <option value="3">3 ★★★</option>
+                                    <option value="4">4 ★★★★</option>
+                                    <option value="5">5 ★★★★★</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Отзыв</label>
+                        <textarea class="form-control" name="review" rows="3" placeholder="Ваши впечатления о книге..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Добавить книгу</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
